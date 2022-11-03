@@ -31,7 +31,7 @@ public class ViewSimple extends ViewBase {
         gridPane1.add(gameGrid, 0, 1);
         gridPane1.add(controllerGrid, 0, 2); //From ViewBase.java
 
-        Scene scene = new Scene(gridPane1, 600, 600);
+        Scene scene = new Scene(gridPane1, 1920, 1080);
         stage.setScene(scene);
         stage.show();
     }

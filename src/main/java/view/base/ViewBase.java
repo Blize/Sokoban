@@ -5,6 +5,9 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
+
+import java.io.FileNotFoundException;
+
 public abstract class ViewBase {
     protected GridPane controllerGrid;
     protected GridPane gameGrid;
@@ -38,7 +41,7 @@ public abstract class ViewBase {
 
     }
 
-    public abstract void showGamerGrid();
+    public abstract void showGamerGrid() throws FileNotFoundException;
 
     public void setController(Controller controller) {
         this.controller = controller;

@@ -22,10 +22,11 @@ public class Sokoban extends Application {
        System.out.println(boardSokoban.toString());
 
 
-        ViewBase view = new ViewSimple(stage);
-
-
+        //ViewBase view = new ViewSimple(stage);
+        ViewBase view = new ViewModern(stage);
         Controller controller = new Controller(boardSokoban, view);
+
+
         view.setController(controller);
         controller.start();
     }

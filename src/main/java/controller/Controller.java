@@ -2,8 +2,11 @@ package controller;
 
 import javafx.event.ActionEvent;
 
+import javafx.scene.control.Button;
 import model.BoardSokoban;
 import view.base.*;
+
+import java.io.FileNotFoundException;
 
 public class Controller implements javafx.event.EventHandler<ActionEvent> {
     protected ViewBase view;
@@ -31,11 +34,26 @@ public class Controller implements javafx.event.EventHandler<ActionEvent> {
         return model;
     }
 
-    public void start() {
+    public void start() throws FileNotFoundException {
         this.view.showGamerGrid();
     }
     @Override
     public void handle(ActionEvent event) {
+        Button source = (Button) event.getSource();
+        switch (source.getText()) {
+            case "W":
+                System.out.println("UP");
+                break;
+            case "D":
+                System.out.println("Right");
+                break;
+            case "S":
+                System.out.println("Down");
+                break;
+            case "A":
+                System.out.println("Left");
+                break;
 
+        }
     }
 }
