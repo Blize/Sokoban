@@ -45,9 +45,9 @@ public class ViewModern extends ViewBase {
         for (Tile[] line: controller.getModel().getTile()) {
             int x = 0;
 
-            for (Tile tile : line) {
+            for (Tile tile: line) {
                 Label label = new Label();
-                String path = "/Users/matthiasmantsch/Downloads/assets/" + this.charToImage(tile.getType()) + ".png";
+                String path = "src of your pictures(without the picture name)" + this.charToImage(tile.getType()) + ".png";
 
                 FileInputStream fileInputStream = new FileInputStream(path);
                 Image image = new Image(fileInputStream, 50, 50, false, true);

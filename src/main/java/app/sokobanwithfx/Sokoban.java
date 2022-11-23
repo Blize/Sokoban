@@ -13,7 +13,7 @@ public class Sokoban extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        BoardSokoban boardSokoban = new BoardSokoban("/Users/matthiasmantsch/Downloads/level2.txt");
+        BoardSokoban boardSokoban = new BoardSokoban("src to your lvl");
         try {
             boardSokoban.readFile();
         } catch (IOException e) {
